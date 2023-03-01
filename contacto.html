@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlogDeCafé</title>
+
+    <!-- Agregamos hojas de estilo y preloads -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preload" href="css/stylos.css" as="style" />
+    <link rel="stylesheet" href="css/stylos.css" as="style" />
+
+    <!-- Agregamos fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="contenedor">
+        <!-- Inicio Contenedor Barra -->
+        <div class="contenedor__barra">
+          <a class="logo" href="index.html"
+            ><h1 class="Nombre">
+              <span class="logo__normal">Blog</span>DeCafé
+            </h1></a
+          >
+
+          <nav class="navegacion">
+            <a class="navegacion__nav" href="nosotros.html">Nosotros</a>
+            <a class="navegacion__nav" href="cursos.html">Cursos</a>
+            <a class="navegacion__nav" href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+        <!-- Fin Contenedor Barra -->
+
+        <!-- Inicio Contenedor Texto -->
+        <div class="contenedor__texto">
+          <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+          <p class="no-margin">
+            Aprende de los expertos con las mejores recetas y consejos
+          </p>
+        </div>
+        <!-- Fin Contenedor Barra -->
+      </div>
+    </header>
+
+    <!-- Inicio Contenedor Principal -->
+    <div class="contenedor">
+      <!-- Inicio contenido principal -->
+      <main>
+        <h3 class="center-texto">Contacto</h3>
+        <div class="cotacto__contenido">
+          <div class="contacto__imagen"></div>
+          <form class="formulario">
+            <div class="campo">
+              <label class="campo__label" for="Nombre">Nombre</label>
+              <input
+                class="campo__field"
+                type="text"
+                placeholder="Tu Nombre"
+                id="Nombre"
+              />
+            </div>
+            <div class="campo">
+              <label class="campo__label" for="Email">Email</label>
+              <input
+                class="campo__field"
+                type="email"
+                placeholder="Tu Email"
+                id="Email"
+              />
+            </div>
+            <div class="campo">
+              <label class="campo__label" for="Mensaje">Mensaje</label>
+              <textarea
+                class="campo__field campo__field--textarea"
+                id="Mensaje"
+              ></textarea>
+            </div>
+            <div class="campo">
+              <input
+                type="submit"
+                value="Enviar"
+                class="boton boton--primario"
+              />
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+    <!-- Fin contenido principal -->
+
+    <!-- Inicio contenido footer -->
+
+    <footer class="footer">
+      <div class="contenedor__barra contenedor">
+        <a class="logo" href="index.html"
+          ><h1 class="Nombre">
+            <span class="logo__normal">Blog</span>DeCafé
+          </h1></a
+        >
+        <nav class="navegacion">
+          <a class="navegacion__nav" href="nosotros.html">Nosotros</a>
+          <a class="navegacion__nav" href="cursos.html">Cursos</a>
+          <a class="navegacion__nav" href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </footer>
+    <!-- Fin contenido footer -->
+  </body>
+</html>
